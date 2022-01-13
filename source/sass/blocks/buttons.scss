@@ -1,0 +1,29 @@
+.button {
+  display: inline-block;
+  padding: 14px 29px 15px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: $font-family--roboto-condensed;
+  text-align: center;
+  color: $color-white;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: 1px solid $color-white;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+
+  &:hover,
+  &:focus {
+    color: $color-blue;
+
+    border-color: $color-blue;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}

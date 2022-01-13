@@ -35,3 +35,22 @@ body {
 
   grid-template-rows: min-content 1fr min-content;
 }
+
+.logo {
+  display: block;
+  width: 202px;
+  height: 52px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:not(a[href]) {
+    pointer-events: none;
+  }
+}

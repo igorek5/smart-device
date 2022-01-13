@@ -1,0 +1,34 @@
+.intro {
+  min-height: 878px;
+
+  color: $color-white;
+
+  background-color: $color-dark-blue;
+  background-image: url("../img/content/intro-bg@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) and (min-width: $desktop-width) {
+    background-image: url("../img/content/intro-bg@2x.png");
+  }
+
+  @media (max-width: $to-desktop-width) {
+    min-height: 686px;
+
+    background-image: url("../img/content/intro-bg-tablet@1x.png");
+
+    @media (min-resolution: 2dppx) and (min-width: $tablet-width) {
+      background-image: url("../img/content/intro-bg-tablet@2x.png");
+    }
+  }
+
+  @media (max-width: $to-tablet-width) {
+    min-height: 647px;
+
+    background-image: url("../img/content/intro-bg-mobile@1x.png");
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/content/intro-bg-mobile@2x.png");
+    }
+  }
+}
