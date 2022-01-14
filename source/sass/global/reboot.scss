@@ -54,3 +54,16 @@ body {
     pointer-events: none;
   }
 }
+
+.accordion-block {
+  @media (max-width: $to-tablet-width) {
+    display: none;
+    width: 100%;
+  }
+}
+
+.accordion-button.open + .accordion-block {
+  @media (max-width: $to-tablet-width) {
+    display: block;
+  }
+}

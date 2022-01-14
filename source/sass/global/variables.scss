@@ -6,8 +6,11 @@ $color-black: #000000;
 
 $color-blue: #00b2ff;
 $color-grey: #c4c4c4;
+$color-light: #cdcdcd;
+$color-grey-light: #fafafa;
 $color-dark-grey: #666666;
 $color-dark-blue: #1b2d37;
+$color-border: #626962;
 
 // Fonts
 //---------------------------------
@@ -23,4 +26,5 @@ $to-tablet-width: 767px;
 $tablet-width: 768px;
 $to-desktop-width: 1023px;
 $desktop-width: 1024px;
+$desktop-middle-width: 1200px;
 $max-desktop-width: 1478px;
