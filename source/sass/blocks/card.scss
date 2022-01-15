@@ -1,0 +1,108 @@
+.card--production {
+  @media (max-width: $to-desktop-width) {
+    margin-right: 5px;
+  }
+
+  @media (max-width: $to-tablet-width) {
+    margin: 0;
+  }
+}
+
+.card__link {
+  position: relative;
+  z-index: 1;
+
+  display: block;
+  min-height: 620px;
+  padding: 53px 44px 80px;
+
+  @media (max-width: $to-desktop-width) {
+    min-height: 256px;
+    padding: 41px 44px 80px;
+
+    &--diode {
+      padding-top: 50px;
+    }
+  }
+
+  @media (max-width: $to-tablet-width) {
+    padding: 20px 35px 80px;
+
+    &--diode {
+      padding-top: 30px;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    width: 63px;
+    height: 63px;
+
+    background-color: $color-blue;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 26px;
+    bottom: 27px;
+
+    width: 6px;
+    height: 9px;
+
+    background-image: url("../img/svg/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (max-width: $to-tablet-width) {
+      right: 29px;
+    }
+  }
+}
+
+.card__title {
+  max-width: 205px;
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: $font-family--roboto-condensed;
+
+  &--installation {
+    max-width: 190px;
+  }
+}
+
+.card__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  width: 100%;
+  height: 100%;
+
+  opacity: 0.2;
+}
+
+.card__image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.card__link:hover .card__image,
+.card__link:focus .card__image {
+  opacity: 0.4;
+}
+
+.card__link:active .card__image {
+  opacity: 0.6;
+}

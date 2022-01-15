@@ -37,14 +37,17 @@
   align-items: center;
   margin-left: 50px;
 
-  grid-gap: 47px;
+  grid-column-gap: 47px;
+  grid-row-gap: 47px;
 
   @media (max-width: $to-desktop-width) {
-    grid-gap: 34px;
+    grid-column-gap: 34px;
+    grid-row-gap: 34px;
   }
 
   @media (max-width: $to-tablet-width) {
-    grid-gap: 23px;
+    grid-column-gap: 23px;
+    grid-row-gap: 23px;
   }
 }
 

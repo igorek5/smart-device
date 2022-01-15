@@ -10,7 +10,7 @@
   margin: 0 auto;
   padding: 65px 32px 58px;
 
-  border-bottom: 1px solid $color-border;
+  border-bottom: 1px solid rgba($color-border, 0.2);
 
   @media (max-width: $to-desktop-width) {
     padding: 0;
@@ -31,7 +31,7 @@
     width: 100%;
     padding: 50px 32px 50px;
 
-    border-bottom: 1px solid $color-border;
+    border-bottom: 1px solid rgba($color-border, 0.2);
   }
 
   @media (max-width: $to-tablet-width) {
