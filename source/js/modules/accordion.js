@@ -13,8 +13,10 @@ const accordionButtonHandler = (evt) => {
 };
 
 export const setAccordionControl = () => {
-  buttons.forEach((button) => {
-    button.classList.remove('open');
-    button.addEventListener('click', accordionButtonHandler);
-  });
+  if (buttons) {
+    buttons.forEach((button) => {
+      button.classList.remove('open');
+      button.addEventListener('click', accordionButtonHandler);
+    });
+  }
 };
