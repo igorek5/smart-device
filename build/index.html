@@ -71,40 +71,40 @@
     <div class="container">
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
-          <ul class="advantages__list">
-            <li class="advantages__item">
-              <svg width="29" height="35">
-                <use xlink:href="img/sprite_auto.svg#stopwatch"></use>
-              </svg>
-              <h3 class="advantages__title">Оперативные сроки</h3>
-              <p class="advantages__text">Усовершенствованная логистическая система позволяет нам просчитывать
-                стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки.</p>
-            </li>
-            <li class="advantages__item advantages__item--provider">
-              <svg width="35" height="35">
-                <use xlink:href="img/sprite_auto.svg#hired"></use>
-              </svg>
-              <h3 class="advantages__title">Крупные поставщики</h3>
-              <p class="advantages__text">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE,
-                HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.
-              </p>
-            </li>
-            <li class="advantages__item advantages__item--confidentiality">
-              <svg width="36" height="31">
-                <use xlink:href="img/sprite_auto.svg#detective"></use>
-              </svg>
-              <h3 class="advantages__title advantages__title--confidentiality">Полная конфиденциальность</h3>
-              <p class="advantages__text">По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
-            </li>
-            <li class="advantages__item advantages__item--price">
-              <svg width="35" height="35">
-                <use xlink:href="img/sprite_auto.svg#tag"></use>
-              </svg>
-              <h3 class="advantages__title advantages__title--price">Персонализация стоимости</h3>
-              <p class="advantages__text">Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить
-                ту цену, которая Вас устраивает.</p>
-            </li>
-          </ul>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <svg width="29" height="35">
+              <use xlink:href="img/sprite_auto.svg#stopwatch"></use>
+            </svg>
+            <h3 class="advantages__title">Оперативные сроки</h3>
+            <p class="advantages__text">Усовершенствованная логистическая система позволяет нам просчитывать
+              стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки.</p>
+          </li>
+          <li class="advantages__item advantages__item--provider">
+            <svg width="35" height="35">
+              <use xlink:href="img/sprite_auto.svg#hired"></use>
+            </svg>
+            <h3 class="advantages__title">Крупные поставщики</h3>
+            <p class="advantages__text">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE,
+              HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.
+            </p>
+          </li>
+          <li class="advantages__item advantages__item--confidentiality">
+            <svg width="36" height="31">
+              <use xlink:href="img/sprite_auto.svg#detective"></use>
+            </svg>
+            <h3 class="advantages__title advantages__title--confidentiality">Полная конфиденциальность</h3>
+            <p class="advantages__text">По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
+          </li>
+          <li class="advantages__item advantages__item--price">
+            <svg width="35" height="35">
+              <use xlink:href="img/sprite_auto.svg#tag"></use>
+            </svg>
+            <h3 class="advantages__title advantages__title--price">Персонализация стоимости</h3>
+            <p class="advantages__text">Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить
+              ту цену, которая Вас устраивает.</p>
+          </li>
+        </ul>
       </section>
 
       <section class="about-company">
@@ -202,7 +202,44 @@
         </div>
       </div>
     </section>
-
+    <section class="feedback">
+      <div class="feedback__wrapper">
+        <div class="feedback__form-block">
+          <h2 class="visually-hidden">Форма обратной связи</h2>
+          <p class="feedback__text">Остались вопросы? Задайте их&nbsp;нам!</p>
+          <P class="feedback__answer">Мы проконсультируем Вас бесплатно</P>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <div class="feedback__input-block">
+              <div class="feedback__field feedback__field--name">
+                <label>
+                  <span class="visually-hidden">Имя</span>
+                  <input type="text" name="name" placeholder="Имя">
+                </label>
+              </div>
+              <div class="feedback__field feedback__field--phone">
+                <label>
+                  <span class="visually-hidden">Телефон</span>
+                  <input type="tel" name="phone" placeholder="Телефон">
+                </label>
+              </div>
+              <div class="feedback__field feedback__field--textarea">
+                <label>
+                  <span class="visually-hidden">Ваш вопрос</span>
+                  <textarea placeholder="Ваш вопрос" name="question"></textarea>
+                </label>
+              </div>
+            </div>
+            <div class="feedback__button-block">
+              <div class="form__personal-checkbox">
+                  <input class="visually-hidden" type="checkbox" name="personal-checkbox" id="personal-checkbox" checked>
+                <label for="personal-checkbox">Я согласен на обработку персональных данных</label>
+              </div>
+              <button class="feedback__button button" type="submit">Задать вопрос</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="page-footer">
