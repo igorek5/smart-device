@@ -3,20 +3,36 @@ import {initPhoneMask} from './phone-mask.js';
 const form = document.querySelector('.feedback form');
 const nameInput = document.querySelector('.feedback__field--name input');
 const phoneInput = document.querySelector('.feedback__field--phone input');
-const checkboxInput = document.querySelector('.form__personal-checkbox input');
+const checkboxInput = document.querySelector('.feedback__personal-checkbox input');
 
 const minNameLength = 1;
 const minPhoneLength = 17;
 
-const checkFieldLength = (field, length) => {
+const messageError = {
+  nameError: 'Ведите имя',
+  phoneError: 'Телефон в формате +7 (XXX) XXX-XX-XX',
+};
+
+const createErrorElement = (field, message) => {
+  let span = document.createElement('span');
+  span.classList.add('form__error-message');
+  span.textContent = message;
+  field.parentNode.append(span);
+};
+
+const checkFieldLength = (field, length, message) => {
   if (field.value.length > length) {
     return true;
   }
   field.classList.add('is-invalid');
+  createErrorElement(field, message);
   return false;
 };
 
-const inputRemoveErrorHandler = (evt) => evt.target.classList.remove('is-invalid');
+const inputRemoveErrorHandler = ({target}) => {
+  target.classList.remove('is-invalid');
+  target.parentNode.querySelector('.form__error-message').remove();
+};
 
 const inputRemoveError = () => {
   form.querySelectorAll('input').forEach((input) => {
@@ -25,11 +41,11 @@ const inputRemoveError = () => {
 };
 
 const checkNameField = () => {
-  return checkFieldLength(nameInput, minNameLength);
+  return checkFieldLength(nameInput, minNameLength, messageError.nameError);
 };
 
 const checkPhoneField = () => {
-  return checkFieldLength(phoneInput, minPhoneLength);
+  return checkFieldLength(phoneInput, minPhoneLength, messageError.phoneError);
 };
 
 const checkСheckbox = () => {

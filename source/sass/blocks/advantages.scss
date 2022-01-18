@@ -83,6 +83,24 @@
   }
 }
 
+.advantages__item--provider svg {
+  @media (max-width: $to-tablet-width) {
+    top: 24px;
+
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.advantages__item--confidentiality svg {
+  @media (max-width: $to-tablet-width) {
+    top: 24px;
+
+    width: 30px;
+    height: 26px;
+  }
+}
+
 .advantages__title {
   margin: 0;
   margin-bottom: 15px;

@@ -58,11 +58,10 @@
             height="515" alt="Пять печатных плат в стопке">
         </picture>
         <p class="promo__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <button class="promo__button button">
+        <a class="promo__button button" href="#feedback">
           <span class="promo__button-text">Получить бесплатную консультацию</span>
-          <span class="promo__button-text--mobile">Бесплатная консультация</span>
-        </button>
-        <a class="promo__scroll" href="#">Скролл вниз</a>
+          <span class="promo__button-mobile">Бесплатная консультация</span>
+        </a>
       </div>
     </section>
   </section>
@@ -202,7 +201,7 @@
         </div>
       </div>
     </section>
-    <section class="feedback">
+    <section class="feedback" id="feedback">
       <div class="feedback__wrapper">
         <div class="feedback__form-block">
           <h2 class="visually-hidden">Форма обратной связи</h2>
@@ -230,8 +229,8 @@
               </div>
             </div>
             <div class="feedback__button-block">
-              <div class="form__personal-checkbox">
-                  <input class="visually-hidden" type="checkbox" name="personal-checkbox" id="personal-checkbox" checked>
+              <div class="feedback__personal-checkbox">
+                <input class="visually-hidden" type="checkbox" name="personal-checkbox" id="personal-checkbox" checked>
                 <label for="personal-checkbox">Я согласен на обработку персональных данных</label>
               </div>
               <button class="feedback__button button" type="submit">Задать вопрос</button>
@@ -249,7 +248,7 @@
           <img alt="Логотип «Smart Device»" src="img/svg/logo-footer.svg" width="202" height="52">
         </a>
 
-        <span class="page-footer__year page-footer__year--social">1999-2018 SD Service Devices</span>
+        <span class="page-footer__year page-footer__year--top">1999-2018 SD Service Devices</span>
 
         <ul class="page-footer__social social">
           <li class="social__item">
@@ -314,10 +313,13 @@
     </div>
 
     <div class="page-footer__copyright">
-      <span class="page-footer__act">Все права защищены</span>
-      <span class="page-footer__year page-footer__year--copyright">1999-2018 SD Service Devices</span>
-      <a class="page-footer__copyright-link" href="#">Условия конфиденциальности</a>
-      <a class="page-footer__copyright-link" href="#">Developed by wow studio</a>
+      <div class="page-footer__copyright-wrapper">
+        <span class="page-footer__act">Все права защищены</span>
+        <span class="page-footer__year page-footer__year--copyright">1999-2018 SD Service Devices</span>
+        <a class="page-footer__copyright-link page-footer__copyright-link--condition" href="#">Условия
+          конфиденциальности</a>
+        <a class="page-footer__copyright-link page-footer__copyright-link--studia" href="#">Developed by wow studio</a>
+      </div>
     </div>
   </footer>
 

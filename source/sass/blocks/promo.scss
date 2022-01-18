@@ -183,38 +183,10 @@
   }
 }
 
-.promo__button-text--mobile {
+.promo__button-mobile {
   display: none;
 
   @media (max-width: $to-tablet-width) {
     display: block;
-  }
-}
-
-.promo__scroll {
-  position: absolute;
-  bottom: 116px;
-  left: -16px;
-
-  display: block;
-  padding: 10px;
-
-  font-size: 14px;
-  line-height: 16px;
-
-  transform: rotate(-90deg);
-  opacity: 0.5;
-
-  @media (max-width: $to-desktop-width) {
-    display: none;
-  }
-
-  &:hover,
-  &:focus {
-    opacity: 1;
-  }
-
-  &:active {
-    opacity: 0.3;
   }
 }

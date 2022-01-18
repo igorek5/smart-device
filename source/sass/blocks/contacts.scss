@@ -3,7 +3,7 @@
 
   @media (max-width: $to-desktop-width) {
     width: 385px;
-    padding: 20px 32px 20px 20px;
+    padding: 20px 32px 20px 16px;
   }
 
   @media (max-width: $to-tablet-width) {
@@ -12,7 +12,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 30px 15px;
+    padding: 27px 15px 9px;
   }
 }
 
@@ -21,9 +21,9 @@
   flex-direction: column;
 
   @media (max-width: $to-tablet-width) {
-    width: 100%;
-    margin-top: 25px;
     align-items: flex-start;
+    width: 100%;
+    margin-top: 29px;
   }
 }
 
@@ -40,12 +40,12 @@
 
   @media (max-width: $to-tablet-width) {
     margin: 0;
+    max-width: 250px;
   }
 }
 
 .contacts__address {
   margin: 0;
-  margin-bottom: 5px;
 
   font-size: 15px;
   line-height: 25px;
@@ -55,8 +55,6 @@
 }
 
 .contacts__link {
-  margin-bottom: 5px;
-
   font-size: 15px;
   line-height: 25px;
   color: $color-dark-blue;
