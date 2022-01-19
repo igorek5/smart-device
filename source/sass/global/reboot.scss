@@ -96,7 +96,7 @@ body {
 
   background-color: rgba($color-black, 0.5);
 
-  @media (max-width: $to-tablet-width) {
+  @media (max-width: $to-desktop-width) {
     display: none;
   }
 }
@@ -112,7 +112,7 @@ body {
   height: 100%;
   overflow: hidden;
 
-  @media (max-width: $to-tablet-width) {
+  @media (max-width: $to-desktop-width) {
     overflow: visible;
     position: static;
   }

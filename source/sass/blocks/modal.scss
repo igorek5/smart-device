@@ -19,7 +19,7 @@
 .modal.open {
   display: block;
 
-  @media (max-width: $to-tablet-width) {
+  @media (max-width: $to-desktop-width) {
     display: none;
   }
 }

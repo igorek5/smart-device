@@ -559,7 +559,6 @@ input[type="radio"].visually-hidden {
   align-content: center;
   min-width: 320px;
   max-width: 1478px;
-  max-width: 1478px;
   margin: 0 auto;
   padding: 33px 32px;
 }
@@ -1115,14 +1114,17 @@ input[type="radio"].visually-hidden {
 .feedback__button-block {
   display: -ms-grid;
   display: grid;
-  -webkit-box-align: self-start;
-  -ms-flex-align: self-start;
-  align-items: self-start;
   margin-left: 4px;
   grid-column-gap: 34px;
   grid-row-gap: 20px;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
+}
+
+.feedback__button {
+  -ms-flex-item-align: self-start;
+  -ms-grid-row-align: self-start;
+  align-self: self-start;
 }
 
 .feedback__button:hover,
@@ -1134,6 +1136,12 @@ input[type="radio"].visually-hidden {
 
 .feedback__button:active {
   opacity: 0.3;
+}
+
+.feedback__personal-checkbox {
+  -ms-flex-item-align: self-start;
+  -ms-grid-row-align: self-start;
+  align-self: self-start;
 }
 
 .feedback__personal-checkbox label {
@@ -1693,7 +1701,6 @@ input[type="radio"].visually-hidden {
 
 .form__checkbox input:focus + label::before {
   outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .form__checkbox input.is-invalid + label::before {
@@ -1765,6 +1772,15 @@ input[type="radio"].visually-hidden {
     background-image: url("../img/svg/triangles-big-tablet.svg");
     background-position: 100% calc(37% + 1px);
     background-size: 559px 873px;
+  }
+
+  .modal-overlay {
+    display: none;
+  }
+
+  .no-scroll {
+    overflow: visible;
+    position: static;
   }
 
   .intro {
@@ -2009,9 +2025,6 @@ input[type="radio"].visually-hidden {
   }
 
   .feedback__button-block {
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: start;
     grid-column-gap: 31px;
   }
 
@@ -2089,6 +2102,10 @@ input[type="radio"].visually-hidden {
     width: 385px;
     padding: 20px 32px 20px 16px;
   }
+
+  .modal.open {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2103,15 +2120,6 @@ input[type="radio"].visually-hidden {
 
   .main-container {
     background-position: top calc(68% + 24px) right -119px;
-  }
-
-  .modal-overlay {
-    display: none;
-  }
-
-  .no-scroll {
-    overflow: visible;
-    position: static;
   }
 
   .intro {
@@ -2538,10 +2546,6 @@ input[type="radio"].visually-hidden {
   .contacts__title {
     margin: 0;
     max-width: 250px;
-  }
-
-  .modal.open {
-    display: none;
   }
 
   .modal__field input {

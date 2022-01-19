@@ -220,6 +220,7 @@
   max-width: 165px;
 
   opacity: 0.5;
+
   @media (max-width: $to-desktop-width) {
     display: none;
   }

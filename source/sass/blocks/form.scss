@@ -19,7 +19,6 @@
 
 .form__checkbox input:focus + label::before {
   outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .form__checkbox input.is-invalid + label::before {

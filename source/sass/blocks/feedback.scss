@@ -2,15 +2,13 @@
   color: $color-white;
 
   background-color: $color-blue;
-  background-image: url("../img/svg/triangles-form.svg"),
-  url("../img/content/paper-airplane@1x.png");
+  background-image: url("../img/svg/triangles-form.svg"), url("../img/content/paper-airplane@1x.png");
   background-repeat: no-repeat;
   background-position: calc(50% + 89px) 63%, 25% 42%;
   background-size: 1745px 765px, calc(26% + 11px);
 
   @media (min-resolution: 2dppx) and (min-width: $desktop-width) {
-    background-image: url("../img/svg/triangles-form.svg"),
-    url("../img/content/paper-airplane@2x.png");
+    background-image: url("../img/svg/triangles-form.svg"), url("../img/content/paper-airplane@2x.png");
   }
 
   @media (max-width: $desktop-special-width) {
@@ -237,7 +235,6 @@
 
 .feedback__button-block {
   display: grid;
-  align-items: self-start;
   margin-left: 4px;
 
   grid-column-gap: 34px;
@@ -245,8 +242,6 @@
   grid-template-columns: 1fr 1fr;
 
   @media (max-width: $to-desktop-width) {
-    align-items: start;
-
     grid-column-gap: 31px;
   }
 
@@ -258,6 +253,8 @@
 }
 
 .feedback__button {
+  align-self: self-start;
+
   &:hover,
   &:focus {
     color: $color-white;
@@ -272,6 +269,8 @@
 }
 
 .feedback__personal-checkbox {
+  align-self: self-start;
+
   @media (max-width: $to-desktop-width) {
     margin-top: 9px;
     margin-left: 5px;
