@@ -67,7 +67,7 @@
   </section>
 
   <main>
-    <div class="container">
+    <div class="main-container">
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages__list">
@@ -207,35 +207,47 @@
           <h2 class="visually-hidden">Форма обратной связи</h2>
           <p class="feedback__text">Остались вопросы? Задайте их&nbsp;нам!</p>
           <P class="feedback__answer">Мы проконсультируем Вас бесплатно</P>
-          <form action="https://echo.htmlacademy.ru" method="post">
-            <div class="feedback__input-block">
-              <div class="feedback__field feedback__field--name">
-                <label>
-                  <span class="visually-hidden">Имя</span>
-                  <input type="text" name="name" placeholder="Имя">
-                </label>
+
+          <div class="form feedback__form">
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <div class="feedback__input-block">
+
+                <div class="feedback__field feedback__field--name form__name">
+                  <label for="form-name">
+                    <span class="visually-hidden">Введите ваше Имя</span>
+                  </label>
+                  <input id="form-name" type="text" name="name" placeholder="Имя">
+                  <div class="form__error">Введите имя</div>
+                </div>
+
+                <div class="feedback__field feedback__field--phone form__phone">
+                  <label for="form-phone">
+                    <span class="visually-hidden">Введите ваш Телефон</span>
+                  </label>
+                  <input id="form-phone" type="tel" name="phone" placeholder="Телефон">
+                  <div class="form__error">Номер телефона +7 (XXX) XXX-XX-XX</div>
+                </div>
+
+                <div class="feedback__field feedback__field--textarea form__textarea">
+                  <label for="form-message">
+                    <span class="visually-hidden">Задайте вопрос</span>
+                  </label>
+                  <textarea placeholder="Ваш вопрос" id="form-message" name="question"></textarea>
+                  <div class="form__error">Задайте вопрос</div>
+                </div>
               </div>
-              <div class="feedback__field feedback__field--phone">
-                <label>
-                  <span class="visually-hidden">Телефон</span>
-                  <input type="tel" name="phone" placeholder="Телефон">
-                </label>
+
+              <div class="feedback__button-block">
+                <button class="feedback__button form__button button" type="submit">Задать вопрос</button>
+
+                <div class="feedback__personal-checkbox form__checkbox">
+                  <input class="visually-hidden" type="checkbox" name="personal-checkbox" id="personal-checkbox"
+                    checked>
+                  <label for="personal-checkbox">Я согласен на обработку персональных данных</label>
+                </div>
               </div>
-              <div class="feedback__field feedback__field--textarea">
-                <label>
-                  <span class="visually-hidden">Ваш вопрос</span>
-                  <textarea placeholder="Ваш вопрос" name="question"></textarea>
-                </label>
-              </div>
-            </div>
-            <div class="feedback__button-block">
-              <div class="feedback__personal-checkbox">
-                <input class="visually-hidden" type="checkbox" name="personal-checkbox" id="personal-checkbox" checked>
-                <label for="personal-checkbox">Я согласен на обработку персональных данных</label>
-              </div>
-              <button class="feedback__button button" type="submit">Задать вопрос</button>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
       </div>
     </section>
@@ -322,6 +334,47 @@
       </div>
     </div>
   </footer>
+
+  <section class="modal">
+    <h2 class="modal__title">Закажите звонок</h2>
+    <p class="modal__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+    <div class="form modal__form">
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <div class="form__name modal__field modal__field--name">
+          <label for="modal-name">
+            <span class="visually-hidden">Введите ваше Имя</span>
+          </label>
+          <input id="modal-name" type="text" name="name" placeholder="Имя">
+          <div class="form__error">Введите имя</div>
+        </div>
+
+        <div class="form__phone modal__field">
+          <label for="modal-phone">
+            <span class="visually-hidden">Введите ваш Телефон</span>
+          </label>
+          <input id="modal-phone" type="tel" name="phone" placeholder="Телефон">
+          <div class="form__error">Номер телефона +7 (XXX) XXX-XX-XX</div>
+        </div>
+
+        <div class="form__textarea modal__field modal__field--textarea">
+          <label for="modal-message">
+            <span class="visually-hidden">Задайте вопрос</span>
+          </label>
+          <textarea placeholder="Ваш вопрос" id="modal-message" name="question"></textarea>
+          <div class="form__error">Задайте вопрос</div>
+        </div>
+
+        <button class="modal__button button" type="submit">Отправить</button>
+
+        <div class="form__checkbox modal__checkbox">
+          <input class="visually-hidden" type="checkbox" name="personal-checkbox" id="modal-checkbox" checked>
+          <label for="modal-checkbox">Я согласен на обработку персональных данных</label>
+        </div>
+      </form>
+    </div>
+    <button class="modal__close" aria-label="Закрыть" type="button"></button>
+  </section>
+  <div class="modal-overlay hidden"></div>
 
   <script src="js/main.min.js"></script>
 </body>

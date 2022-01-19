@@ -154,11 +154,13 @@
   border: none;
 
   @media (max-width: $to-desktop-width) {
+    max-width: 420px;
     margin-left: 51px;
     padding: 17px 31px 20px;
   }
 
   @media (max-width: $to-tablet-width) {
+    max-width: 400px;
     margin: 0;
     margin-left: 3px;
     padding: 17px 32px 19px 32px;

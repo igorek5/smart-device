@@ -96,6 +96,8 @@
 }
 
 .page-header__button {
+
+  max-width: 250px;
   @media (max-width: $to-desktop-width) {
     display: none;
   }

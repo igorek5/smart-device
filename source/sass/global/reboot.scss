@@ -55,8 +55,6 @@ body {
   }
 }
 
-
-
 .accordion-block {
   @media (max-width: $to-tablet-width) {
     display: none;
@@ -70,7 +68,7 @@ body {
   }
 }
 
-.container {
+.main-container {
   min-width: 320px;
 
   background-image: url("../img/svg/triangles-big.svg");
@@ -86,5 +84,36 @@ body {
 
   @media (max-width: $to-tablet-width) {
     background-position: top calc(68% + 24px) right -119px;
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  z-index: 9;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba($color-black, 0.5);
+
+  @media (max-width: $to-tablet-width) {
+    display: none;
+  }
+}
+
+.modal-overlay.hidden {
+  display: none;
+}
+
+.no-scroll {
+  position: fixed;
+
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  @media (max-width: $to-tablet-width) {
+    overflow: visible;
+    position: static;
   }
 }

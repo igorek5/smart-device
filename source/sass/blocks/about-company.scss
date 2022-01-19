@@ -103,8 +103,8 @@
   }
 
   @media (max-width: $to-tablet-width) {
-    padding-left: 3px;
     margin-bottom: 40px;
+    padding-left: 3px;
 
     &--suppliers {
       margin-bottom: 28px;
@@ -127,6 +127,7 @@
 }
 
 .about-company__button {
+  max-width: 500px;
   margin-top: 17px;
   padding-right: 49px;
   padding-left: 49px;

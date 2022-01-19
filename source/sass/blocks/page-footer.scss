@@ -131,7 +131,7 @@
   &--condition {
     margin-left: 5%;
 
-    @media (max-width: $to-desktop-width) {
+    @media (max-width: $desktop-middle-width) {
       margin: 0;
     }
 

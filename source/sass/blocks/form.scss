@@ -1,0 +1,45 @@
+.form__error {
+  position: absolute;
+  top: -20px;
+  left: 0;
+
+  display: none;
+
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  color: $color-error;
+
+  user-select: none;
+}
+
+.form__error.active {
+  display: block;
+}
+
+.form__checkbox input:focus + label::before {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.form__checkbox input.is-invalid + label::before {
+  outline: 2px solid $color-error;
+}
+
+.modal__field input.is-invalid {
+  outline: 2px solid $color-error;
+
+  &:hover,
+  &:focus {
+    outline: 2px solid rgba($color-error, 0.5);
+  }
+}
+
+.modal__field textarea.is-invalid {
+  outline: 2px solid $color-error;
+
+  &:hover,
+  &:focus {
+    outline: 2px solid rgba($color-error, 0.3);
+  }
+}

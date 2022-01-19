@@ -113,6 +113,8 @@
 }
 
 .feedback__field {
+  position: relative;
+
   margin-bottom: 40px;
 
   @media (max-width: $to-desktop-width) {
@@ -122,12 +124,6 @@
   @media (max-width: $to-tablet-width) {
     margin-bottom: 28px;
   }
-}
-
-.feedback__field label {
-  position: relative;
-
-  display: block;
 }
 
 .feedback__field input {
@@ -181,11 +177,6 @@
   }
 }
 
-.feedback__field--name input.is-invalid,
-.feedback__field--phone input.is-invalid {
-  outline: 2px solid $color-error;
-}
-
 .feedback__field--textarea {
   width: 100%;
   margin-bottom: 39px;
@@ -234,8 +225,19 @@
   }
 }
 
+.feedback__field input.is-invalid,
+.feedback__field textarea.is-invalid {
+  outline: 2px solid $color-error;
+
+  &:hover,
+  &:focus {
+    outline: 2px solid rgba($color-error, 0.3);
+  }
+}
+
 .feedback__button-block {
   display: grid;
+  align-items: self-start;
   margin-left: 4px;
 
   grid-column-gap: 34px;
@@ -270,8 +272,6 @@
 }
 
 .feedback__personal-checkbox {
-  order: 2;
-
   @media (max-width: $to-desktop-width) {
     margin-top: 9px;
     margin-left: 5px;
@@ -344,24 +344,4 @@
   @media (max-width: $to-tablet-width) {
     left: 5px;
   }
-}
-
-.feedback__personal-checkbox input:focus + label::before {
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-}
-
-.feedback__personal-checkbox input.is-invalid + label::before {
-  outline: 2px solid $color-error;
-}
-
-.form__error-message {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  font-size: 15px;
-  line-height: 18px;
-  color: $color-error;
-  font-weight: 700;
 }
