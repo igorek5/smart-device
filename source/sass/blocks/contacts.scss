@@ -17,12 +17,13 @@
 }
 
 .contacts__list {
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 
   @media (max-width: $to-tablet-width) {
-    align-items: flex-start;
-    width: 100%;
     margin-top: 29px;
   }
 }
@@ -39,8 +40,8 @@
   letter-spacing: 0.05em;
 
   @media (max-width: $to-tablet-width) {
-    margin: 0;
     max-width: 250px;
+    margin: 0;
   }
 }
 

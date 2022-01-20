@@ -1,37 +1,85 @@
 .modal {
   position: fixed;
-  top: 135px;
-  left: 50%;
-  z-index: 10;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
 
-  display: none;
-  width: 490px;
-  padding: 32px 39px 37px;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 
-  color: $color-white;
+  transform: scale(1.1);
+  visibility: hidden;
+  opacity: 0;
 
-  background-color: $color-blue;
-  transform: translateX(-50%);
-}
+  transition: opacity 0.2s, transform 0.2s, visibility 0.2s;
 
-.modal.open {
-  display: block;
+  pointer-events: none;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   @media (max-width: $to-desktop-width) {
     display: none;
   }
 }
 
-.modal__title {
-  margin: 0;
-  margin-bottom: 9px;
+.modal__wrapper {
+  position: relative;
 
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 39px;
-  font-family: $font-family--roboto-condensed;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100%;
+  padding: 60px 40px;
+
+  background-color: rgba($color-black, 0.6);
+  transform: translateZ(0);
+}
+
+.modal__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  cursor: pointer;
+}
+
+.modal__content {
+  position: relative;
+
+  width: 490px;
+  padding: 32px 39px 37px;
+
+  color: $color-white;
+
+  background-color: $color-blue;
+}
+
+.modal--preload {
+  transition: none;
+}
+
+.modal.is-active {
+  transform: scale(1);
+  visibility: visible;
+  opacity: 1;
+
+  transition: opacity 0.2s, transform 0.2s;
+
+  pointer-events: auto;
 }
 
 .modal__text {

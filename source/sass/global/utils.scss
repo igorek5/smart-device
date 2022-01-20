@@ -16,3 +16,23 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
 }
+
+.scroll-lock-ios {
+  position: fixed;
+
+  overflow: hidden;
+
+  @media (max-width: $to-desktop-width) {
+    position: static;
+
+    overflow: visible;
+  }
+}
+
+.scroll-lock {
+  overflow: hidden;
+
+  @media (max-width: $to-desktop-width) {
+    overflow: visible;
+  }
+}

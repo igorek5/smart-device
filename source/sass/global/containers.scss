@@ -1,0 +1,18 @@
+.main-container {
+  min-width: 320px;
+
+  background-image: url("../img/svg/triangles-big.svg");
+  background-repeat: no-repeat;
+  background-position: 0 -29px;
+  background-size: cover;
+
+  @media (max-width: $to-desktop-width) {
+    background-image: url("../img/svg/triangles-big-tablet.svg");
+    background-position: 100% calc(37% + 1px);
+    background-size: 559px 873px;
+  }
+
+  @media (max-width: $to-tablet-width) {
+    background-position: top calc(68% + 24px) right -119px;
+  }
+}
