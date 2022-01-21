@@ -578,7 +578,7 @@ input[type="radio"].visually-hidden {
   -ms-flex-align: center;
   align-items: center;
   margin-left: 50px;
-  grid-column-gap: 47px;
+  grid-column-gap: 46px;
   grid-row-gap: 47px;
 }
 
@@ -655,7 +655,7 @@ input[type="radio"].visually-hidden {
 
 .promo__text {
   position: relative;
-  width: 70%;
+  width: 57%;
   max-width: 720px;
   margin: 0;
   margin-bottom: 43px;
@@ -704,7 +704,7 @@ input[type="radio"].visually-hidden {
 .advantages {
   max-width: 1290px;
   margin: 0 auto;
-  padding: 109px 60px 45px;
+  padding: 111px 60px 45px;
 }
 
 .advantages__list {
@@ -722,7 +722,7 @@ input[type="radio"].visually-hidden {
 .advantages__item {
   position: relative;
   min-height: 299px;
-  padding: 97px 41px 64px;
+  padding: 96px 41px 64px;
   color: #00b2ff;
   background-color: #ffffff;
   border: 1px solid #ebebeb;
@@ -767,7 +767,7 @@ input[type="radio"].visually-hidden {
 .about-company {
   max-width: 1290px;
   margin: 0 auto;
-  padding: 62px 62px 109px 60px;
+  padding: 61px 62px 109px 60px;
 }
 
 .about-company__wrapper {
@@ -838,12 +838,12 @@ input[type="radio"].visually-hidden {
   min-width: 320px;
   max-width: 1228px;
   margin: 0 auto;
-  padding: 88px 29px 130px;
+  padding: 88px 29px 127px;
 }
 
 .catalog__text {
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 52px;
   font-size: 36px;
   line-height: 51px;
   font-family: "Roboto-Condensed", "Arial", sans-serif;
@@ -863,7 +863,7 @@ input[type="radio"].visually-hidden {
   z-index: 1;
   display: block;
   min-height: 620px;
-  padding: 53px 44px 80px;
+  padding: 52px 44px 80px;
 }
 
 .card__link::before {
@@ -941,7 +941,7 @@ input[type="radio"].visually-hidden {
   min-width: 320px;
   max-width: 1411px;
   margin: 0 auto;
-  padding: 89px 119px 111px;
+  padding: 91px 119px 111px;
 }
 
 .feedback__form-block {
@@ -983,7 +983,7 @@ input[type="radio"].visually-hidden {
 }
 
 .feedback__field input {
-  padding: 14px 15px;
+  padding: 13px 15px;
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
@@ -1326,6 +1326,7 @@ input[type="radio"].visually-hidden {
 
 .main-nav {
   width: 42%;
+  margin-left: 8px;
 }
 
 .main-nav__title {
@@ -1783,20 +1784,19 @@ input[type="radio"].visually-hidden {
     background-position: calc(50% + 89px) 63%, 7% 42%;
   }
 
+  .page-footer__copyright-link--condition {
+    margin: 0;
+  }
+
   .main-nav {
     width: auto;
+    margin-left: 0;
   }
 
   .main-nav__list {
     -webkit-column-count: 1;
     -moz-column-count: 1;
     column-count: 1;
-  }
-}
-
-@media (max-width: 1200px) {
-  .page-footer__copyright-link--condition {
-    margin: 0;
   }
 }
 
@@ -1877,7 +1877,7 @@ input[type="radio"].visually-hidden {
   }
 
   .promo img {
-    top: calc(4% + 9px);
+    top: calc(4% + 7px);
     left: calc(50% + 125px);
     width: 465px;
     height: 340px;
@@ -1935,6 +1935,13 @@ input[type="radio"].visually-hidden {
   .advantages__item svg {
     top: 22px;
     left: 25px;
+  }
+
+  .advantages__item--provider svg {
+    top: 22px;
+    left: 25px;
+    width: 33px;
+    height: 35px;
   }
 
   .advantages__item--confidentiality svg {
@@ -2043,7 +2050,11 @@ input[type="radio"].visually-hidden {
   }
 
   .feedback__field {
-    margin-bottom: 42px;
+    margin-bottom: 40px;
+  }
+
+  .feedback__field input {
+    padding: 13px 15px 17px;
   }
 
   .feedback__field--name input {
@@ -2143,6 +2154,12 @@ input[type="radio"].visually-hidden {
 
   .modal {
     display: none;
+  }
+}
+
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (min-resolution: 2dppx) {
+  .about-company__wrapper::before {
+    background-image: url("../img/content/year-tablet@2x.png");
   }
 }
 
@@ -2589,9 +2606,5 @@ input[type="radio"].visually-hidden {
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), (max-width: 1023px) and (min-resolution: 2dppx) and (min-width: 768px) {
   .intro {
     background-image: url("../img/content/intro-bg-tablet@2x.png");
-  }
-
-  .about-company__wrapper::before {
-    background-image: url("../img/content/year-tablet@2x.png");
   }
 }

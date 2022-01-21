@@ -1,7 +1,7 @@
 const promoButton = document.querySelector('.promo__button');
 
 const setScroll = (link) => {
-  const speed = 0.25;
+  const SPEED = 0.25;
   const anchor = document.querySelector(link.getAttribute('href'));
   const coordAnchor = anchor.getBoundingClientRect().top;
   const windowY = window.pageYOffset;
@@ -17,8 +17,8 @@ const setScroll = (link) => {
 
     let coordY =
       coordAnchor < 0
-        ? Math.max(windowY - progress / speed, windowY + coordAnchor)
-        : Math.min(windowY + progress / speed, windowY + coordAnchor);
+        ? Math.max(windowY - progress / SPEED, windowY + coordAnchor)
+        : Math.min(windowY + progress / SPEED, windowY + coordAnchor);
 
     window.scrollTo(0, coordY);
     if (coordY !== windowY + coordAnchor) {

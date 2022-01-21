@@ -1,7 +1,7 @@
 .advantages {
   max-width: 1290px;
   margin: 0 auto;
-  padding: 109px 60px 45px;
+  padding: 111px 60px 45px;
 
   @media (max-width: $to-desktop-width) {
     padding: 54px 25px 25px;
@@ -34,7 +34,7 @@
   position: relative;
 
   min-height: 299px;
-  padding: 97px 41px 64px;
+  padding: 96px 41px 64px;
 
   color: $color-blue;
 
@@ -143,6 +143,13 @@
 }
 
 .advantages__item--provider svg {
+  @media (max-width: $to-desktop-width) {
+    top: 22px;
+    left: 25px;
+    width: 33px;
+    height: 35px;
+  }
+
   @media (max-width: $to-tablet-width) {
     top: 24px;
 

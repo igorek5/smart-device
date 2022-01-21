@@ -1,7 +1,7 @@
 .about-company {
   max-width: 1290px;
   margin: 0 auto;
-  padding: 62px 62px 109px 60px;
+  padding: 61px 62px 109px 60px;
 
   @media (max-width: $to-desktop-width) {
     padding: 30px 25px 82px 25px;
@@ -39,7 +39,7 @@
     background-position: center;
     background-size: cover;
 
-    @media (min-resolution: 2dppx) and (min-width: $desktop-width) {
+    @media (min-resolution: 2dppx) and (min-width: ($to-desktop-width + 1)) {
       background-image: url("../img/content/year@2x.png");
     }
 
@@ -52,7 +52,7 @@
 
       background-image: url("../img/content/year-tablet@1x.png");
 
-      @media (min-resolution: 2dppx) and (min-width: $tablet-width) {
+      @media (min-resolution: 2dppx) {
         background-image: url("../img/content/year-tablet@2x.png");
       }
     }

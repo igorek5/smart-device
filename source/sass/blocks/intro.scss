@@ -9,7 +9,7 @@
   background-position: center;
   background-size: cover;
 
-  @media (min-resolution: 2dppx) and (min-width: $desktop-width) {
+  @media (min-resolution: 2dppx) and (min-width: ($to-desktop-width + 1)) {
     background-image: url("../img/content/intro-bg@2x.png");
   }
 
@@ -18,7 +18,7 @@
 
     background-image: url("../img/content/intro-bg-tablet@1x.png");
 
-    @media (min-resolution: 2dppx) and (min-width: $tablet-width) {
+    @media (min-resolution: 2dppx) and (min-width: ($to-tablet-width + 1)) {
       background-image: url("../img/content/intro-bg-tablet@2x.png");
     }
   }

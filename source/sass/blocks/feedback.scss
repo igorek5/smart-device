@@ -7,11 +7,11 @@
   background-position: calc(50% + 89px) 63%, 25% 42%;
   background-size: 1745px 765px, calc(26% + 11px);
 
-  @media (min-resolution: 2dppx) and (min-width: $desktop-width) {
+  @media (min-resolution: 2dppx) and (min-width: ($to-desktop-width + 1)) {
     background-image: url("../img/svg/triangles-form.svg"), url("../img/content/paper-airplane@2x.png");
   }
 
-  @media (max-width: $desktop-special-width) {
+  @media (max-width: $desktop-middle-width) {
     background-position: calc(50% + 89px) 63%, 7% 42%;
   }
 
@@ -24,7 +24,7 @@
   min-width: 320px;
   max-width: 1411px;
   margin: 0 auto;
-  padding: 89px 119px 111px;
+  padding: 91px 119px 111px;
 
   @media (max-width: $to-desktop-width) {
     padding: 80px 87px 103px;
@@ -116,7 +116,7 @@
   margin-bottom: 40px;
 
   @media (max-width: $to-desktop-width) {
-    margin-bottom: 42px;
+    margin-bottom: 40px;
   }
 
   @media (max-width: $to-tablet-width) {
@@ -125,7 +125,7 @@
 }
 
 .feedback__field input {
-  padding: 14px 15px;
+  padding: 13px 15px;
 
   font-size: 16px;
   line-height: 22px;
@@ -133,6 +133,10 @@
 
   background-color: rgba($color-white, 0.1);
   border: none;
+
+  @media (max-width: $to-desktop-width) {
+    padding: 13px 15px 17px;
+  }
 
   @media (max-width: $to-tablet-width) {
     padding: 14px 15px 18px;

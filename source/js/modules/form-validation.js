@@ -2,8 +2,9 @@ import {initPhoneMask} from './phone-mask.js';
 
 const forms = document.querySelectorAll('.form form');
 
-const minNameLength = 1;
-const minPhoneLength = 17;
+const MIN_NAME_LENGTH = 1;
+const MIN_PHONE_LENGTH = 17;
+
 
 const setVisibleError = (field) => {
   field.classList.add('is-invalid');
@@ -30,11 +31,11 @@ const inputRemoveError = () => {
   });
 };
 
-const checkСheckbox = (checkbox) => {
-  if (checkbox.checked) {
+const checkCheckBox = (checkBox) => {
+  if (checkBox.checked) {
     return true;
   }
-  checkbox.classList.add('is-invalid');
+  checkBox.classList.add('is-invalid');
   return false;
 };
 
@@ -50,16 +51,16 @@ const checkTextarea = (textarea) => {
 const validateInputs = (form) => {
   const nameInput = form.querySelector('.form__name input');
   const phoneInput = form.querySelector('.form__phone input');
-  const checkboxInput = form.querySelector('.form__checkbox input');
+  const checkBoxInput = form.querySelector('.form__checkbox input');
   const textarea = form.querySelector('.form__textarea textarea');
 
-  const flagName = checkFieldLength(nameInput, minNameLength);
-  const flagPhone = checkFieldLength(phoneInput, minPhoneLength);
-  const flagСheckbox = checkСheckbox(checkboxInput);
+  const flagName = checkFieldLength(nameInput, MIN_NAME_LENGTH);
+  const flagPhone = checkFieldLength(phoneInput, MIN_PHONE_LENGTH);
+  const flagCheckBox = checkCheckBox(checkBoxInput);
   const flagTextarea = checkTextarea(textarea);
 
 
-  if (!flagName || !flagPhone || !flagСheckbox || !flagTextarea) {
+  if (!flagName || !flagPhone || !flagCheckBox || !flagTextarea) {
     return false;
   }
   return true;

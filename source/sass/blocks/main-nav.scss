@@ -1,8 +1,10 @@
 .main-nav {
   width: 42%;
+  margin-left: 8px;
 
-  @media (max-width: $desktop-special-width) {
+  @media (max-width: $desktop-middle-width) {
     width: auto;
+    margin-left: 0;
   }
 
   @media (max-width: $to-desktop-width) {
@@ -46,7 +48,7 @@
   list-style: none;
   column-count: 2;
 
-  @media (max-width: $desktop-special-width) {
+  @media (max-width: $desktop-middle-width) {
     column-count: 1;
   }
 
