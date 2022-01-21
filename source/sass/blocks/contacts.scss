@@ -1,18 +1,18 @@
 .contacts {
   width: 356px;
 
+  @media (max-width: $desktop-middle-width) {
+      width: 250px;
+  }
+
   @media (max-width: $to-desktop-width) {
     width: 385px;
     padding: 20px 32px 20px 16px;
   }
 
   @media (max-width: $to-tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
     width: 100%;
-    padding: 27px 15px 9px;
+    padding: 0;
   }
 }
 
@@ -24,7 +24,7 @@
   list-style: none;
 
   @media (max-width: $to-tablet-width) {
-    margin-top: 29px;
+    padding: 5px 15px 26px;
   }
 }
 
@@ -40,8 +40,10 @@
   letter-spacing: 0.05em;
 
   @media (max-width: $to-tablet-width) {
-    max-width: 250px;
+    max-width: 90%;
     margin: 0;
+
+    pointer-events: none;
   }
 }
 

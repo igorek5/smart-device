@@ -146,6 +146,7 @@
   @media (max-width: $to-desktop-width) {
     top: 22px;
     left: 25px;
+
     width: 33px;
     height: 35px;
   }
@@ -159,6 +160,8 @@
 }
 
 .advantages__item--confidentiality svg {
+  top: 43px;
+
   @media (max-width: $to-desktop-width) {
     top: 26px;
 
@@ -168,5 +171,15 @@
 
   @media (max-width: $to-tablet-width) {
     top: 24px;
+  }
+}
+
+.advantages__item--price svg {
+  @media (max-width: $to-desktop-width) {
+    top: 23px;
+    left: 24px;
+
+    width: 35px;
+    height: 33px;
   }
 }
