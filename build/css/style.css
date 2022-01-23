@@ -945,7 +945,7 @@ input[type="radio"].visually-hidden {
   min-width: 320px;
   max-width: 1411px;
   margin: 0 auto;
-  padding: 91px 119px 111px;
+  padding: 91px 119px 112px;
 }
 
 .feedback__form-block {
@@ -1794,6 +1794,7 @@ input[type="radio"].visually-hidden {
   }
 
   .main-nav {
+    width: 45%;
     margin-left: 0;
   }
 
@@ -2072,6 +2073,7 @@ input[type="radio"].visually-hidden {
 
   .feedback__field--phone input {
     width: 279px;
+    padding: 13px 17px 17px;
   }
 
   .feedback__field--textarea {
@@ -2153,6 +2155,7 @@ input[type="radio"].visually-hidden {
   }
 
   .main-nav {
+    width: 42%;
     padding: 20px 20px 20px 25px;
   }
 
@@ -2415,6 +2418,7 @@ input[type="radio"].visually-hidden {
 
   .feedback__field--phone input {
     width: 100%;
+    padding: 14px 15px 18px;
   }
 
   .feedback__field--textarea {

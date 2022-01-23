@@ -3,10 +3,12 @@
   margin-left: 8px;
 
   @media (max-width: $desktop-middle-width) {
+    width: 45%;
     margin-left: 0;
   }
 
   @media (max-width: $to-desktop-width) {
+    width: 42%;
     padding: 20px 20px 20px 25px;
   }
 
@@ -53,7 +55,6 @@
 
   @media (max-width: $to-tablet-width) {
     padding: 5px 15px 26px;
-
   }
 }
 

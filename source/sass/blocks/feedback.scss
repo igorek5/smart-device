@@ -24,7 +24,7 @@
   min-width: 320px;
   max-width: 1411px;
   margin: 0 auto;
-  padding: 91px 119px 111px;
+  padding: 91px 119px 112px;
 
   @media (max-width: $to-desktop-width) {
     padding: 80px 87px 103px;
@@ -172,10 +172,12 @@
 
   @media (max-width: $to-desktop-width) {
     width: 279px;
+    padding: 13px 17px 17px;
   }
 
   @media (max-width: $to-tablet-width) {
     width: 100%;
+    padding: 14px 15px 18px;
   }
 }
 
