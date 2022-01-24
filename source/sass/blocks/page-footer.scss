@@ -8,7 +8,7 @@
   justify-content: space-between;
   max-width: 1478px;
   margin: 0 auto;
-  padding: 65px 11px 58px 32px;
+  padding: 65px 11px 45px 32px;
 
   @media (max-width: $to-desktop-width) {
     margin-bottom: 17px;
@@ -38,7 +38,7 @@
   @media (max-width: $to-tablet-width) {
     flex-direction: column;
     margin-bottom: 0;
-    padding: 47px 25px 49px 10px;
+    padding: 47px 25px 39px 10px;
   }
 }
 

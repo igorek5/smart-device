@@ -6,20 +6,16 @@
 
   list-style: none;
 
-  grid-column-gap: 16px;
-  grid-row-gap: 16px;
-
   @media (max-width: $to-desktop-width) {
     align-items: center;
     width: 113px;
-    margin-top: 2px;
   }
 
   @media (max-width: $to-tablet-width) {
     width: auto;
-    max-width: 300px;
+    max-width: 258px;
     margin: 0;
-    margin-left: 15px;
+    margin-left: 31px;
   }
 }
 
@@ -27,17 +23,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 27px;
+  margin-right: 16px;
+  margin-bottom: 16px;
 
   @media (max-width: $to-desktop-width) {
-    margin: 0;
+    margin-top: 10px;
+    margin-right: 16px;
+    margin-bottom: 10px;
+  }
+
+  &:nth-child(3n) {
+    @media (max-width: $to-desktop-width) {
+      margin-right: 0;
+    }
+
+    @media (max-width: $to-tablet-width) {
+      margin-right: 16px;
+    }
   }
 
   @media (max-width: $to-tablet-width) {
-    margin: 0;
-
-    &:last-child {
-      margin-right: 0;
-    }
+    margin-top: 0;
+    margin-right: 16px;
   }
 }
 

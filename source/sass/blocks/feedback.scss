@@ -2,17 +2,13 @@
   color: $color-white;
 
   background-color: $color-blue;
-  background-image: url("../img/svg/triangles-form.svg"), url("../img/content/paper-airplane@1x.png");
+  background-image: url("../img/svg/triangles-form.svg");
   background-repeat: no-repeat;
-  background-position: calc(50% + 89px) 63%, 25% 42%;
-  background-size: 1745px 765px, calc(26% + 11px);
+  background-position: calc(50% + 89px) 63%;
+  background-size: 1745px 765px;
 
   @media (min-resolution: 2dppx) and (min-width: ($to-desktop-width + 1)) {
-    background-image: url("../img/svg/triangles-form.svg"), url("../img/content/paper-airplane@2x.png");
-  }
-
-  @media (max-width: $desktop-middle-width) {
-    background-position: calc(50% + 89px) 63%, 7% 42%;
+    background-image: url("../img/svg/triangles-form.svg");
   }
 
   @media (max-width: $to-desktop-width) {
@@ -21,6 +17,8 @@
 }
 
 .feedback__wrapper {
+  position: relative;
+
   min-width: 320px;
   max-width: 1411px;
   margin: 0 auto;
@@ -38,8 +36,37 @@
 }
 
 .feedback__form-block {
+  position: relative;
+
   width: 574px;
   margin-left: auto;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15%;
+    left: calc(-109% + 1px);
+
+    width: 511px;
+    height: 288px;
+
+    background-image: url("../img/content/paper-airplane@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/content/paper-airplane@2x.png");
+    }
+
+    @media (max-width: $desktop-middle-width) {
+      left: calc(-91% + 1px);
+    }
+
+    @media (max-width: $to-desktop-width) {
+      content: none;
+    }
+  }
 
   @media (max-width: $to-desktop-width) {
     width: 596px;
@@ -347,7 +374,7 @@
   transform: rotate(-45deg);
 
   @media (max-width: $to-tablet-width) {
-    left: 5px;
     top: 5px;
+    left: 5px;
   }
 }

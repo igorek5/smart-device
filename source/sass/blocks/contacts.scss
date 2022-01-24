@@ -2,7 +2,7 @@
   width: 356px;
 
   @media (max-width: $desktop-middle-width) {
-      width: 250px;
+    width: 250px;
   }
 
   @media (max-width: $to-desktop-width) {
@@ -33,6 +33,7 @@
   margin: 0;
   margin-bottom: 25px;
 
+  font-weight: 400;
   font-size: 15px;
   line-height: 16px;
   font-family: $font-family--roboto-condensed;
